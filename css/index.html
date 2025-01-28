@@ -234,39 +234,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-<!--スワイパー-->
-  <script>
-    $(document).ready(function() {
-      const mySwiper = new Swiper('.swiper', {
-        slidesPerView: 1, 
-        spaceBetween: 0, 
-        loop: true, 
-        autoplay: { delay: 3000 }, 
-        pagination: { el: '.swiper-pagination', }, 
-        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', }, 
-        scrollbar: { el: '.swiper-scrollbar', },
-        breakpoints: {750:{slidesPerView: 2,}},
-      });
-    });
-
-  $(function () {
-    $(window).scroll(function () {
-      const wHeight = $(window).height();
-      const wScroll = $(window).scrollTop();
-      $(".fade-in").each(function () {
-        const bPosition = $(this).offset().top;
-        if (wScroll > bPosition - wHeight + 450 ) {
-          $(this).addClass("fadeIn");
-        }
-      });
-      $(".fade-in2").each(function () {
-        const bPosition = $(this).offset().top;
-        if (wScroll > bPosition - wHeight + 200 ) {
-          $(this).addClass("fadeIn");
-        }
-      });
-    });
-  });
-  </script>
+<!--JavaScript-->
+  <script src="script.js"></script>
   </body>
 </html>
