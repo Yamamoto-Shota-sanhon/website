@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+    text-align: left;
+    list-style-type: none;
+    border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+body {
+    font-family:'Arial','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    background-color: #FFEFD5;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*ヘッダー*/
+header {
+    background-color: lightgray;
+}
+
+.navbar {
+    max-height: 50px !important;
+}
+
+.navbar-brand {
+    font-size: 2.5rem !important;
+    font-weight: 600 !important;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0px 0px 0px 2px rgb(255, 183, 0),
+    0px 0px 0px 3px rgb(255, 255, 255);
+}
+
+.btn {
+    margin-left: 1px;
+    margin-right: 1rem;
+    font-weight: bold;
+    background-color: #F0F0F0;
+}
+
+.btn:hover {
+    background-color: grey;
+}
+
+/*スライド*/
+.swiper {
+    width: 100%;
+    height: 400px;
+	object-fit: cover;
+}
+
+.swiper-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*アコーディオンメニュー*/
+.announce {
+    width: 80%;
+    margin: 0 auto 5px auto;
+    letter-spacing: 3px;
+}
+
+.accordion {
+    width: 80%;
+    margin: auto;
+    --bs-accordion-active-color: black;
+    --bs-accordion-active-bg: #FFC7AF;
+}
+
+.accordion-body {
+    padding: 0;
+}
+
+.accordion-header {
+    border-radius: 0;
+    margin-top: 2px;
+}
+
+.accordion-button {
+    background-color: #FFC7AF;
+}
+
+.accordion-button:hover {
+    background-color:#FFC7AF;
+    color:inherit;
+    box-shadow: none;
+}
+
+.accordion-collapse {
+    background-color: #FFEFD5;
+}
+
+.accordion-item {
+    background-color: #FFEFD5;
+}
+
+.accordion-button::after {
+    display: none !important;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+.accordion-flush .accordion-item {
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-color: #FFC7AF;
+}
+
+/*こだわり*/
+.box{
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+.lead {
+    margin-top: 30px;
+}
+
+/*店舗情報*/
+.box2 {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+.address {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+}
+
+.add1 {
+	font-size: 2rem;
+	margin: 40px 30px 20px ;
+}
+
+.add2 {
+	margin: 0px 20px 20px ;
+}
+
+.add3 {
+	font-size: 2rem;
+	margin: 10px 30px 20px ;
+}
+
+/*フッター*/
+footer {
+    background-color: darkgray;
+    margin-top: 30px;
+    height: 100px;
+}
+
+footer .nav {
+    margin-top: 20px !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/*レスポンシブ*/
+@media(max-width:750px) {
+    .navbar {
+        max-height: none !important;
+    }
+    
+    .btn-size {
+        height:  3.5rem;
+        width: 4.5rem;
+        margin-right: 0.1rem;
+    }
+    
+    .navbar-brand {
+        font-size: 2rem !important;
+        margin-left: 0 !important;
+    }
+    
+    .fade-in2 {
+        display: none !important;
+    }
+    
+    .search {
+        align-items: flex-end;
+    }
+    
+    .swiper-slide {
+        padding: 20px 40px;
+    }
+    
+    .announce h2 {
+        text-align: left;
+    }
+    
+    .accordion-body li {
+        margin-top: 10px;
+        font-size: 0.8rem !important;
+    }
+    
+    .btn {
+        margin-right: 0;
+    }
+    
+    .lead {
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+    
+    .add1 {
+        font-size: 2rem;
+        margin: 10px 20px 20px 10px!important;
+    }
+    
+    .add2 {
+        margin-left: 0 !important;
+    }
+    
+    .add3 {
+        font-size: 2rem;
+        margin: 10px 20px 20px 10px !important;
+    }
+    
+    .add {
+        padding: 0;
+    }
+    
+    .img{
+        width: 100%;
+        height: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    footer .nav-item {
+        font-size: 0.8rem !important;
+    }
+    
+    .box2 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+/*フェードイン*/
+.fade-in {
+	opacity: 0;
+	transition: all 2s;
+}
+
+.fade-in2 {
+	opacity: 0;
+	transition: all 2s;
+}
+
+.fadeIn {
+	opacity: 1;
+}
